@@ -41,4 +41,18 @@ export default {
 
   // Build Configuration: https://go.nuxtjs.dev/config-build
   build: {},
+
+  router: {
+    extendRoutes(routes, resolve) {
+      routes.shift()
+
+      routes.push({
+        name: 'seoList',
+        path: '/buy-car/:brand?/:model?',
+        component: resolve(__dirname, 'pages/buy-car/index.vue')
+      })
+
+      console.log(routes)
+    },
+  },
 }

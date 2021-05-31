@@ -1,5 +1,6 @@
 <template>
   <div>
+    <!-- <Nuxt keep-alive :keepAliveProps="{ include: ['newCarList', 'seoList'] }" /> -->
     <Nuxt />
   </div>
 </template>
